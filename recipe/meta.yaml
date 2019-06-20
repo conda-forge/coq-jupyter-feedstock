@@ -19,13 +19,8 @@ requirements:
   host:
     - python
     - pip
-    - jupyter_client
-    - ipython
-    - ipykernel
-    - future
-    - pexpect >=4.0
   run:
-    - coq
+    - coq >=8.6
     - python
     - jupyter_client
     - ipython
@@ -47,5 +42,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - EugeneLoy
     - isuruf
     - slel
