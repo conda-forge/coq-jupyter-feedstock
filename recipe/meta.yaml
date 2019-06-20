@@ -41,8 +41,6 @@ about:
   home: https://github.com/EugeneLoy/coq_jupyter
   license: Apache-2.0
   license_family: Apache
-  # TODO: remove the file in recipe when MANIFEST.in gets updated, see
-  # https://github.com/EugeneLoy/coq_jupyter/pull/35
   license_file: LICENSE
   summary: 'Jupyter kernel for Coq'
   dev_url: https://github.com/EugeneLoy/coq_jupyter
