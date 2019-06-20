@@ -10,7 +10,7 @@ source:
   sha256: 63d991e9fe0278a721d61247b8970dcf5d29ef963026c0f80784d837d8647c5e
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script:
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -19,13 +19,8 @@ requirements:
   host:
     - python
     - pip
-    - jupyter_client
-    - ipython
-    - ipykernel
-    - future
-    - pexpect >=4.0
   run:
-    - coq
+    - coq >=8.6
     - python
     - jupyter_client
     - ipython
@@ -47,5 +42,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - EugeneLoy
     - isuruf
     - slel
