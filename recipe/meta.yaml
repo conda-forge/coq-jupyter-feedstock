@@ -1,5 +1,5 @@
 {% set name = "coq-jupyter" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/coq_jupyter-{{ version }}.tar.gz
-  sha256: 63d991e9fe0278a721d61247b8970dcf5d29ef963026c0f80784d837d8647c5e
+  sha256: e337acb74e1b561729d13396b3c2fca5b63258b2759ed1796160d71315d038de
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   script:
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
